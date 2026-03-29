@@ -25,6 +25,33 @@ const lessons = [
                 "vietnamese": "Làm sao bây giờ?"
             }
         ]
+    },
+    {
+        id: "lesson2",
+        title: "직장 내 업무 상황 보고하기",
+        description: "상사에게 상황을 설명하고 자연스럽게 대답하는 실전 비즈니스 표현을 배웁니다.",
+        category: "Workplace / 비즈니스",
+        level: "Intermediate",
+        videoId: "m9Lp9yS5-04",
+        start: 45,
+        end: 65,
+        sentences: [
+            {
+                "timestamp": 46,
+                "korean": "잠깐만요, 지금 바로 확인해 보겠습니다.",
+                "vietnamese": "Chờ một chút ạ, tôi sẽ kiểm tra ngay bây giờ."
+            },
+            {
+                "timestamp": 52,
+                "korean": "아, 네! 준비 다 됐습니다. 걱정 마세요.",
+                "vietnamese": "À, vâng! Mọi thứ đã chuẩn bị xong rồi ạ. Đừng lo lắng."
+            },
+            {
+                "timestamp": 58,
+                "korean": "최대한 빨리 처리하도록 하겠습니다.",
+                "vietnamese": "Tôi sẽ cố gắng xử lý nhanh nhất có thể."
+            }
+        ]
     }
 ];
 
