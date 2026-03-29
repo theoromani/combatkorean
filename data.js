@@ -16,137 +16,137 @@ const lessons = [
     },
     {
         id: "lesson2",
-        title: "직장 내 업무 상황 보고하기",
-        description: "상사에게 상황을 설명하고 자연스럽게 대답하는 실전 비즈니스 표현을 배웁니다.",
-        category: "Workplace / 비즈니스",
+        title: "K-드라마 실전 대화 #1",
+        description: "드라마 '쌈 마이웨이'를 통해 배우는 직장 내 대화 표현입니다.",
+        category: "Workplace / 드라마",
         level: "Intermediate",
         videoId: "m9Lp9yS5-04",
-        start: 45,
-        end: 65,
+        start: 30,
+        end: 50,
         sentences: [
-            { "timestamp": 46, "korean": "잠깐만요, 지금 바로 확인해 보겠습니다.", "vietnamese": "Chờ một chút ạ, tôi sẽ kiểm tra ngay bây giờ." },
-            { "timestamp": 52, "korean": "아, 네! 준비 다 됐습니다. 걱정 마세요.", "vietnamese": "À, vâng! Mọi thứ đã chuẩn bị xong rồi ạ. Đừng lo lắng." },
-            { "timestamp": 58, "korean": "최대한 빨리 처리하도록 하겠습니다.", "vietnamese": "Tôi sẽ cố gắng xử lý nhanh nhất có thể." }
+            { "timestamp": 35, "korean": "제가 확인해 보겠습니다.", "vietnamese": "Tôi sẽ kiểm tra lại ạ." },
+            { "timestamp": 40, "korean": "걱정하지 마세요. 잘 될 거예요.", "vietnamese": "Đừng lo lắng. Mọi chuyện sẽ ổn thôi." },
+            { "timestamp": 45, "korean": "지금 바로 가겠습니다.", "vietnamese": "Tôi sẽ đi ngay bây giờ." }
         ]
     },
     {
         id: "lesson3",
-        title: "식당에서 메뉴 주문하기",
-        description: "한국 식당에서 메뉴를 고르고 주문하는 필수 표현을 학습합니다.",
+        title: "식당에서 주문하기",
+        description: "한국의 맛있는 음식을 주문할 때 사용하는 필수 표현입니다.",
         category: "Daily Life / 식당",
         level: "Beginner",
-        videoId: "vX9P2p6Koz0",
-        start: 120,
-        end: 140,
+        videoId: "8X1z4q5DclA",
+        start: 200,
+        end: 220,
         sentences: [
-            { "timestamp": 122, "korean": "여기 메뉴판 좀 보여주시겠어요?", "vietnamese": "Cho tôi xem menu được không ạ?" },
-            { "timestamp": 128, "korean": "비빔밥 하나랑 불고기 2인분 주세요.", "vietnamese": "Cho tôi một suất Bibimbap và hai suất Bulgogi." },
-            { "timestamp": 135, "korean": "너무 맵지 않게 해주세요.", "vietnamese": "Làm cho tôi bớt cay một chút nhé." }
+            { "timestamp": 202, "korean": "여기 주문 좀 받아주세요.", "vietnamese": "Cho tôi gọi món với ạ." },
+            { "timestamp": 210, "korean": "제일 인기 있는 메뉴가 뭐예요?", "vietnamese": "Món nào được ưa chuộng nhất vậy ạ?" },
+            { "timestamp": 215, "korean": "맵지 않게 해주실 수 있나요?", "vietnamese": "Có thể làm cho tôi không cay được không?" }
         ]
     },
     {
         id: "lesson4",
-        title: "병원에서 증상 설명하기",
-        description: "어디가 아픈지 정확하게 설명하고 처방을 받는 방법을 배웁니다.",
-        category: "Emergency / 병원",
-        level: "Intermediate",
-        videoId: "A9O5-N6mCis",
+        title: "한국어 인사와 자기소개",
+        description: "처음 만났을 때 자신을 소개하는 가장 자연스러운 방법입니다.",
+        category: "Socializing / 인사",
+        level: "Beginner",
+        videoId: "g_99p0pW7is",
         start: 10,
         end: 30,
         sentences: [
-            { "timestamp": 12, "korean": "어제부터 열이 나고 목이 아파요.", "vietnamese": "Tôi bị sốt và đau họng từ ngày hôm qua." },
-            { "timestamp": 18, "korean": "배가 계속 아픈데 소화제를 주시겠어요?", "vietnamese": "Tôi bị đau bụng liên tục, cho tôi thuốc tiêu hóa được không?" },
-            { "timestamp": 25, "korean": "주사 맞아야 하나요, 아니면 약만 먹으면 되나요?", "vietnamese": "Tôi phải tiêm hay chỉ cần uống thuốc là được ạ?" }
+            { "timestamp": 12, "korean": "안녕하세요, 처음 뵙겠습니다.", "vietnamese": "Xin chào, lần đầu tiên gặp mặt." },
+            { "timestamp": 18, "korean": "저는 베트남에서 왔습니다.", "vietnamese": "Tôi đến từ Việt Nam." },
+            { "timestamp": 25, "korean": "앞으로 잘 부탁드립니다.", "vietnamese": "Rất mong được giúp đỡ sau này." }
         ]
     },
     {
         id: "lesson5",
-        title: "은행에서 계좌 개설하기",
-        description: "통장을 만들고 체크카드를 발급받는 대화 상황입니다.",
-        category: "Public Service / 은행",
-        level: "Intermediate",
-        videoId: "6DOfO6YlIis",
+        title: "길 찾기와 위치 묻기",
+        description: "한국에서 길을 잃었을 때 당황하지 않고 물어보는 표현입니다.",
+        category: "Daily Life / 교통",
+        level: "Beginner",
+        videoId: "fA9R3m68Ghk",
         start: 50,
-        end: 75,
+        end: 70,
         sentences: [
-            { "timestamp": 52, "korean": "새 계좌를 만들고 싶은데 어떤 서류가 필요해요?", "vietnamese": "Tôi muốn mở tài khoản mới, cần những giấy tờ gì ạ?" },
-            { "timestamp": 60, "korean": "외국인 등록증 여기 있습니다.", "vietnamese": "Thẻ đăng ký người nước ngoài của tôi đây ạ." },
-            { "timestamp": 68, "korean": "인터넷 뱅킹도 신청하고 싶어요.", "vietnamese": "Tôi cũng muốn đăng ký dịch vụ Internet Banking." }
+            { "timestamp": 52, "korean": "실례지만 지하철역이 어디예요?", "vietnamese": "Xin lỗi, ga tàu điện ngầm ở đâu vậy ạ?" },
+            { "timestamp": 60, "korean": "여기서 얼마나 걸리나요?", "vietnamese": "Từ đây đi mất bao lâu ạ?" },
+            { "timestamp": 65, "korean": "쭉 가면 나온다고요? 감사합니다.", "vietnamese": "Đi thẳng là đến ạ? Cảm ơn bạn." }
         ]
     },
     {
         id: "lesson6",
-        title: "시장에서 가격 흥정하기",
-        description: "쇼핑할 때 가격을 물어보고 덤을 요청하는 실용적인 표현입니다.",
+        title: "쇼핑할 때 유용한 표현",
+        description: "물건 가격을 묻고 사이즈를 확인하는 실전 쇼핑 한국어입니다.",
         category: "Daily Life / 쇼핑",
         level: "Beginner",
-        videoId: "p_Vq8U_eOIs",
-        start: 30,
-        end: 55,
+        videoId: "vX9P2p6Koz0",
+        start: 60,
+        end: 80,
         sentences: [
-            { "timestamp": 32, "korean": "이 사과 얼마예요? 좀 비싼 것 같아요.", "vietnamese": "Táo này bao nhiêu tiền ạ? Có vẻ hơi đắt." },
-            { "timestamp": 40, "korean": "조금만 깎아 주시면 안 될까요?", "vietnamese": "Có thể bớt cho tôi một chút được không?" },
-            { "timestamp": 48, "korean": "현금으로 계산하면 더 싸게 해주세요.", "vietnamese": "Nếu trả bằng tiền mặt thì hãy giảm giá thêm cho tôi nhé." }
+            { "timestamp": 62, "korean": "이거 입어봐도 될까요?", "vietnamese": "Tôi có thể mặc thử cái này được không?" },
+            { "timestamp": 70, "korean": "다른 색깔이나 사이즈는 없나요?", "vietnamese": "Có màu khác hay size khác không ạ?" },
+            { "timestamp": 75, "korean": "이걸로 살게요. 계산해 주세요.", "vietnamese": "Tôi sẽ mua cái này. Tính tiền cho tôi nhé." }
         ]
     },
     {
         id: "lesson7",
-        title: "택시 이용 및 목적지 안내",
-        description: "택시 기사님께 목적지를 설명하고 도착 시간을 묻는 표현입니다.",
-        category: "Daily Life / 교통",
-        level: "Beginner",
-        videoId: "fA9R3m68Ghk",
-        start: 15,
-        end: 40,
+        title: "병원과 약국 이용",
+        description: "몸이 아플 때 증상을 말하고 약을 처방받는 방법입니다.",
+        category: "Emergency / 병원",
+        level: "Intermediate",
+        videoId: "A9O5-N6mCis",
+        start: 100,
+        end: 120,
         sentences: [
-            { "timestamp": 18, "korean": "서울역으로 가주세요. 얼마나 걸릴까요?", "vietnamese": "Cho tôi đến ga Seoul. Mất khoảng bao lâu ạ?" },
-            { "timestamp": 26, "korean": "여기서 세워주세요. 감사합니다.", "vietnamese": "Hãy dừng lại ở đây cho tôi. Cảm ơn bác." },
-            { "timestamp": 33, "korean": "잔돈은 안 주셔도 됩니다.", "vietnamese": "Bác không cần trả lại tiền thừa đâu ạ." }
+            { "timestamp": 102, "korean": "머리가 아프고 열이 나는 것 같아요.", "vietnamese": "Tôi bị đau đầu và có vẻ như đang bị sốt." },
+            { "timestamp": 110, "korean": "이 약은 어떻게 먹어야 하나요?", "vietnamese": "Thuốc này phải uống như thế nào ạ?" },
+            { "timestamp": 115, "korean": "식사 후에 바로 드시면 됩니다.", "vietnamese": "Chỉ cần uống ngay sau khi ăn là được ạ." }
         ]
     },
     {
         id: "lesson8",
-        title: "첫 만남 자기소개",
-        description: "처음 만난 사람에게 예의 바르게 인사하고 자신을 소개합니다.",
-        category: "Socializing / 인사",
-        level: "Beginner",
-        videoId: "8X1z4q5DclA",
-        start: 100,
-        end: 125,
+        title: "직장 동료와의 대화",
+        description: "동료와 친해지기 위해 나누는 가벼운 일상 대화 표현입니다.",
+        category: "Workplace / 소통",
+        level: "Intermediate",
+        videoId: "EunE1u-t59o",
+        start: 20,
+        end: 40,
         sentences: [
-            { "timestamp": 102, "korean": "안녕하세요, 만나서 반갑습니다.", "vietnamese": "Xin chào, rất vui được gặp bạn." },
-            { "timestamp": 110, "korean": "저는 베트남에서 온 투이입니다.", "vietnamese": "Tôi là Thuy, đến từ Việt Nam." },
-            { "timestamp": 118, "korean": "잘 부탁드립니다. 앞으로 친하게 지내요.", "vietnamese": "Rất mong được giúp đỡ. Chúng ta hãy làm bạn thân nhé." }
+            { "timestamp": 22, "korean": "오늘 점심 메뉴는 뭐가 좋을까요?", "vietnamese": "Trưa nay ăn món gì thì tốt nhỉ?" },
+            { "timestamp": 30, "korean": "주말에 보통 뭐 하세요?", "vietnamese": "Cuối tuần bạn thường làm gì?" },
+            { "timestamp": 35, "korean": "다음에 같이 커피 한 잔 해요.", "vietnamese": "Lần tới chúng ta cùng đi uống cà phê nhé." }
         ]
     },
     {
         id: "lesson9",
-        title: "직장 내 점심 메뉴 제안",
-        description: "동료들과 점심 메뉴를 고르며 취향을 이야기하는 대화입니다.",
-        category: "Workplace / 소통",
-        level: "Intermediate",
-        videoId: "EunE1u-t59o",
-        start: 45,
-        end: 70,
+        title: "한국의 전통 시장 체험",
+        description: "시장에서 물건을 사고 상인들과 대화하는 정겨운 표현들입니다.",
+        category: "Daily Life / 시장",
+        level: "Beginner",
+        videoId: "p_Vq8U_eOIs",
+        start: 10,
+        end: 30,
         sentences: [
-            { "timestamp": 48, "korean": "오늘 점심은 뭐 먹을까요? 한식 어때요?", "vietnamese": "Trưa nay chúng ta ăn gì nhỉ? Món Hàn Quốc thấy thế nào?" },
-            { "timestamp": 55, "korean": "근처에 맛있는 김치찌개 집이 있어요.", "vietnamese": "Gần đây có quán canh Kimchi ngon lắm." },
-            { "timestamp": 63, "korean": "저는 다 괜찮아요. 아무거나 잘 먹습니다.", "vietnamese": "Tôi thì cái gì cũng được. Tôi ăn được tất cả mọi thứ." }
+            { "timestamp": 12, "korean": "이거 진짜 맛있어 보이네요!", "vietnamese": "Cái này trông ngon thật đấy!" },
+            { "timestamp": 20, "korean": "조금만 더 깎아주시면 안 돼요?", "vietnamese": "Có thể bớt cho tôi thêm một chút được không?" },
+            { "timestamp": 25, "korean": "다음에 또 올게요. 많이 파세요!", "vietnamese": "Lần sau tôi sẽ lại ghé ạ. Chúc bác bán đắt hàng!" }
         ]
     },
     {
         id: "lesson10",
-        title: "우체국에서 택배 보내기",
-        description: "해외로 택배를 보내는 절차와 비용 확인 대화입니다.",
-        category: "Public Service / 생활",
-        level: "Intermediate",
-        videoId: "L7X_H-29LhA",
-        start: 200,
-        end: 230,
+        title: "대중교통 이용하기",
+        description: "버스나 지하철을 이용할 때 꼭 필요한 안내 문구와 표현입니다.",
+        category: "Daily Life / 교통",
+        level: "Beginner",
+        videoId: "6DOfO6YlIis",
+        start: 30,
+        end: 50,
         sentences: [
-            { "timestamp": 205, "korean": "베트남으로 이 박스를 보내고 싶습니다.", "vietnamese": "Tôi muốn gửi chiếc hộp này về Việt Nam." },
-            { "timestamp": 215, "korean": "배송비는 무게에 따라 결정되나요?", "vietnamese": "Phí vận chuyển được quyết định theo trọng lượng phải không ạ?" },
-            { "timestamp": 222, "korean": "도착하는 데 얼마나 걸릴까요?", "vietnamese": "Mất bao lâu thì hàng sẽ đến nơi ạ?" }
+            { "timestamp": 32, "korean": "이번 정류장은 어디인가요?", "vietnamese": "Trạm dừng lần này là ở đâu vậy ạ?" },
+            { "timestamp": 40, "korean": "내릴 때 카드를 찍어야 하나요?", "vietnamese": "Khi xuống xe có phải quẹt thẻ không ạ?" },
+            { "timestamp": 45, "korean": "다음 역에서 갈아타시면 됩니다.", "vietnamese": "Bạn chỉ cần đổi chuyến ở ga tiếp theo là được." }
         ]
     }
 ];
