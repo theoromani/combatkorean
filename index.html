@@ -1,14 +1,32 @@
-<!doctype html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베트남인을 위한 한국어 학습</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <h1>K-Lesson for Vietnam</h1>
+    </header>
+
+    <main>
+        <div class="video-container">
+            <div id="player"></div>
+        </div>
+
+        <div class="controls">
+            <button id="rewind-btn">⏪ 10초 뒤로</button>
+            <button id="speed-down-btn">🔽 속도 느리게</button>
+            <button id="speed-up-btn">🔼 속도 빠르게</button>
+        </div>
+
+        <div id="sentence-cards" class="sentence-cards-container">
+            </div>
+    </main>
+
+    <script src="main.js"></script>
 </body>
 </html>
