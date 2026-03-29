@@ -25,7 +25,7 @@ const lessons = [
         end: 65,
         sentences: [
             { "timestamp": 46, "korean": "잠깐만요, 지금 바로 확인해 보겠습니다.", "vietnamese": "Chờ một chút ạ, tôi sẽ kiểm tra ngay bây giờ." },
-            { "timestamp": 52, "korean": "아, 네! 준비 다 됐습니다. 걱정 마세요.", "vietnamese": "À, vâng! Mọi thứ đã 준비 xong rồi ạ. Đừng lo lắng." },
+            { "timestamp": 52, "korean": "아, 네! 준비 다 됐습니다. 걱정 마세요.", "vietnamese": "À, vâng! Mọi thứ đã chuẩn bị xong rồi ạ. Đừng lo lắng." },
             { "timestamp": 58, "korean": "최대한 빨리 처리하도록 하겠습니다.", "vietnamese": "Tôi sẽ cố gắng xử lý nhanh nhất có thể." }
         ]
     },
@@ -131,7 +131,7 @@ const lessons = [
         sentences: [
             { "timestamp": 48, "korean": "오늘 점심은 뭐 먹을까요? 한식 어때요?", "vietnamese": "Trưa nay chúng ta ăn gì nhỉ? Món Hàn Quốc thấy thế nào?" },
             { "timestamp": 55, "korean": "근처에 맛있는 김치찌개 집이 있어요.", "vietnamese": "Gần đây có quán canh Kimchi ngon lắm." },
-            { "timestamp": 63, "korean": "저는 다 괜찮아요. 아무거나 잘 먹습니다.", "vietnamese": "Tôi thì cái gì cũng được. Cái gì tôi cũng ăn ngon cả." }
+            { "timestamp": 63, "korean": "저는 다 괜찮아요. 아무거나 잘 먹습니다.", "vietnamese": "Tôi thì cái gì cũng được. Tôi ăn được tất cả mọi thứ." }
         ]
     },
     {
