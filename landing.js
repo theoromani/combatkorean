@@ -10,18 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('div');
         card.classList.add('lesson-card');
 
-        // Simple thumbnail using YouTube image
-        const thumbnailUrl = `https://img.youtube.com/vi/${lesson.videoId}/mqdefault.jpg`;
+        const thumbnailUrl = `https://img.youtube.com/vi/${lesson.videoId}/maxresdefault.jpg`;
 
         card.innerHTML = `
-            <div class="lesson-thumbnail">
+            <div class="lesson-thumb">
                 <img src="${thumbnailUrl}" alt="${lesson.title}">
-                <div class="play-overlay">▶</div>
+                <span class="lesson-badge">${lesson.level || 'Beginner'}</span>
             </div>
-            <div class="lesson-info">
+            <div class="lesson-content">
+                <div class="lesson-meta">${lesson.category || 'Conversation'}</div>
                 <h3>${lesson.title}</h3>
                 <p>${lesson.description}</p>
-                <a href="learn.html?id=${lesson.id}" class="btn-learn">학습하기</a>
+                <div style="margin-top: 1.5rem;">
+                    <a href="learn.html?id=${lesson.id}" class="btn btn-primary" style="width: 100%;">Start Lesson</a>
+                </div>
             </div>
         `;
 

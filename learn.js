@@ -4,13 +4,17 @@ const lessonId = urlParams.get('id') || 'lesson1';
 const currentLesson = (window.lessons || []).find(l => l.id === lessonId) || (window.lessons ? window.lessons[0] : null);
 
 if (!currentLesson) {
-    alert('레슨을 찾을 수 없습니다.');
+    alert('Lesson not found.');
     window.location.href = 'index.html';
 }
 
-// Update Page Title
-document.title = `${currentLesson.title} | K-Lesson`;
-document.getElementById('lesson-title').textContent = currentLesson.title;
+// Update Page Content
+document.title = `${currentLesson.title} | Combat Korean Training`;
+document.getElementById('lesson-title-nav').textContent = currentLesson.title;
+
+// Phrase Explanation Placeholder
+const firstPhrase = currentLesson.sentences[0] ? currentLesson.sentences[0].korean : "Learn real expressions";
+document.getElementById('phrase-exp').textContent = `In this scene, you will learn the expression "${firstPhrase}". Pay attention to the tone and situation.`;
 
 // 2. Load YouTube API
 var tag = document.createElement('script');
@@ -21,38 +25,50 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '360',
-        width: '640',
+        height: '100%',
+        width: '100%',
         videoId: currentLesson.videoId,
         playerVars: {
             'start': currentLesson.start,
             'end': currentLesson.end,
             'rel': 0,
-            'modestbranding': 1
+            'modestbranding': 1,
+            'controls': 1,
+            'autoplay': 0
         },
         events: {
             'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
         }
     });
 }
 
 function onPlayerReady(event) {
-    // Optional: auto play
+    // Player is ready
+}
+
+function onPlayerStateChange(event) {
+    // Could track time here to highlight active card
 }
 
 // 3. Render Sentence Cards
 const sentenceCardsContainer = document.getElementById('sentence-cards');
 
-currentLesson.sentences.forEach(sentence => {
+currentLesson.sentences.forEach((sentence, index) => {
     const card = document.createElement('div');
-    card.classList.add('card');
+    card.classList.add('sentence-card');
+    card.setAttribute('data-index', index);
 
     card.innerHTML = `
-        <h3>${sentence.korean}</h3>
+        <h4>${sentence.korean}</h4>
         <p>${sentence.vietnamese}</p>
     `;
 
     card.addEventListener('click', () => {
+        // Highlight active card
+        document.querySelectorAll('.sentence-card').forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+
         if (player && player.seekTo) {
             player.seekTo(sentence.timestamp, true);
             player.playVideo();
@@ -62,11 +78,11 @@ currentLesson.sentences.forEach(sentence => {
     sentenceCardsContainer.appendChild(card);
 });
 
-// 4. Control Button Listeners
+// 4. Enhanced Player Controls
 document.getElementById('rewind-btn').addEventListener('click', () => {
     if (player && player.getCurrentTime) {
         const currentTime = player.getCurrentTime();
-        player.seekTo(currentTime - 10, true);
+        player.seekTo(Math.max(currentTime - 10, currentLesson.start), true);
     }
 });
 

@@ -3,6 +3,8 @@ const lessons = [
         id: "lesson1",
         title: "실제 한국어 회화 #1",
         description: "베트남 노동자를 위한 실전 한국어 표현 학습 (영상 3:55 ~ 4:10)",
+        category: "Workplace / 생활",
+        level: "Intermediate",
         videoId: "ZtFGPHzdYQM",
         start: 235,
         end: 250,
