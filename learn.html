@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학습 중 | K-Lesson</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="lesson-title">학습 페이지</h1>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-link">← 다른 영상 선택하기</a>
+        
+        <div class="video-container">
+            <div id="player"></div>
+        </div>
+
+        <div class="controls">
+            <button id="rewind-btn">⏪ 10초 뒤로</button>
+            <button id="speed-down-btn">🔽 속도 느리게</button>
+            <button id="speed-up-btn">🔼 속도 빠르게</button>
+        </div>
+
+        <div id="sentence-cards" class="sentence-cards-container">
+            <!-- Sentence cards will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="learn.js"></script>
+</body>
+</html>

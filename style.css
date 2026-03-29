@@ -1,62 +1,280 @@
+/* 기본 설정 */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --bg-color: #fcfcfc;
+    --text-color: #333;
+    --light-gray: #f0f2f5;
+    --white: #ffffff;
+}
 
 body {
-    font-family: sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
+/* Header */
 header {
-    background-color: #4a90e2;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    padding: 1.2rem 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-main {
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.logo span {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%);
+    color: white;
+    padding: 6rem 1rem;
+    text-align: center;
+}
+
+.hero-content {
     max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--primary-color);
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background-color: #f8f9fa;
+}
+
+/* How It Works Section */
+.how-it-works {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.step {
+    text-align: center;
+    flex: 1;
+}
+
+.step-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.step h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.step p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Lesson Section */
+.lessons-section {
+    padding: 5rem 1rem;
+    background-color: var(--white);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    color: #888;
+}
+
+.lesson-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Lesson Card Styles (Dynamic) */
+.lesson-card {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.lesson-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.lesson-thumbnail {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+}
+
+.lesson-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lesson-card:hover .play-overlay {
+    opacity: 1;
+}
+
+.lesson-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.lesson-info h3 {
+    margin: 0 0 0.8rem 0;
+    color: var(--primary-color);
+}
+
+.lesson-info p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.btn-learn {
+    display: block;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background-color 0.2s;
+}
+
+.btn-learn:hover {
+    background-color: #2980b9;
+}
+
+/* Learning Page Specific */
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
 .video-container iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 0; left: 0; width: 100%; height: 100%;
 }
 
 .controls {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .controls button {
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 1.5rem;
     border: none;
-    background-color: #4a90e2;
+    background-color: var(--primary-color);
     color: white;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+    font-weight: 700;
+    transition: all 0.2s;
 }
 
 .controls button:hover {
-    background-color: #357abd;
+    background-color: #34495e;
+    transform: translateY(-2px);
 }
 
 .sentence-cards-container {
@@ -65,25 +283,35 @@ main {
 }
 
 .card {
-    background-color: white;
-    border-radius: 8px;
+    background: var(--white);
     padding: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: all 0.2s;
+    border-left: 4px solid var(--accent-color);
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-.card h3 {
-    margin-top: 0;
-    font-size: 1.2rem;
+.card h3 { margin: 0 0 0.5rem 0; font-size: 1.2rem; }
+.card p { margin: 0; color: #666; }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--light-gray);
+    color: #888;
+    font-size: 0.9rem;
 }
 
-.card p {
-    margin: 0.5rem 0 0;
-    color: #666;
+/* Responsive */
+@media (max-width: 768px) {
+    .how-it-works { flex-direction: column; gap: 4rem; padding: 4rem 1rem; }
+    .hero h2 { font-size: 2rem; }
+    .hero { padding: 4rem 1rem; }
 }
