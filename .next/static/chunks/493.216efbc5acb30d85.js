@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[493],{8493:function(e,s,t){t.d(s,{saveSession:function(){return a}});var n=t(9842),u=t(9506);let a=async(e,s)=>{if(!u.db)return;let t=(0,n.JU)(u.db,"sessions",e);await (0,n.pl)(t,{...s,updatedAt:(0,n.Bt)()},{merge:!0})}}}]);
