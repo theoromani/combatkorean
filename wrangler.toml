@@ -1,5 +1,5 @@
 name = "qsort-culture-diagnosis"
-pages_build_output_dir = ".next"
+pages_build_output_dir = "out"
 
 [vars]
 # Firebase Environment Variables (Input these in Cloudflare Dashboard for security)
