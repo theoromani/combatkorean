@@ -1,0 +1,1 @@
+"use strict";exports.id=499,exports.ids=[499],exports.modules={6499:(s,e,t)=>{t.d(e,{saveSession:()=>i});var d=t(3654),r=t(7464);let i=async(s,e)=>{if(!r.db)return;let t=(0,d.JU)(r.db,"sessions",s);await (0,d.pl)(t,{...e,updatedAt:(0,d.Bt)()},{merge:!0})}}};

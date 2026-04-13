@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"components/board/Board.tsx -> @/lib/db":{"id":8493,"files":["static/chunks/493.216efbc5acb30d85.js"]}}';
