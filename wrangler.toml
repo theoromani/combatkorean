@@ -1,9 +1,6 @@
 name = "qsort-culture-diagnosis"
 pages_build_output_dir = "out"
 
-[build]
-command = "npm run build"
-
 [vars]
 # Firebase Environment Variables (Input these in Cloudflare Dashboard for security)
 # NEXT_PUBLIC_FIREBASE_API_KEY = "your-api-key"
